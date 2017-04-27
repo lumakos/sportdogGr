@@ -1,0 +1,12 @@
+.fade {
+  position: fixed;
+  top: 418px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  opacity: .5 !important;
+  filter: alpha(opacity=50);
+  display: none;
+}

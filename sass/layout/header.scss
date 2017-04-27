@@ -1,0 +1,23 @@
+
+.main-topbar {
+  height: 95px;
+  background-color: #fff;
+  border-color: $partition;
+  .navbar-header {
+    position: relative;
+    .navbar-brand {
+      height: 100%;
+      padding: 15px 0 5px;
+      .logo {
+
+      }
+    }
+    .date {
+      position: absolute;
+      top: 18px;
+      right: 14px;
+      color: $nav-item-hover;
+      font-family: "Fira Sans Extra Condensed Regular", sans-serif;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.main-topbar {
+  .navbar-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+    .navbar-header {
+      float: left;
+      @media screen and (max-width: $screen-md-device) {
+        float: none;
+      }
+      .navbar-toggle {
+        @media screen and (min-width: $screen-md-device) {
+          display: none;
+        }
+        @media screen and (max-width: $screen-md-device) {
+          display: block;
+        }
+      }
+    }
+    .navbar-collapse {
+      @media screen and (max-width: $screen-md-device) {
+          background-color: $nav-item-hover;
+      }
+      .navbar-nav {
+        .dropdown {
+          &:hover {
+            .item {
+              height: 440px;
+              @media screen and (min-width: $screen-lg-device) {
+                height: 324px;
+                max-height: 324px;
+              }
+              @media screen and (max-width: $screen-lg-device) and (min-width: $screen-md-device) {
+                height: 267px;
+              }
+            }
+          }
+          .item {
+            height: 0px;
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0px;
+            -webkit-transition: height 1s ease;
+               -moz-transition: height 1s ease;
+                 -o-transition: height 1s ease;
+                -ms-transition: height 1s ease;
+                    transition: height 1s ease;
+            display: inline-block;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            background: #f0f0f0;
+            .left-section {
+              padding-left: 0;
+              position: relative;
+              img {
+                width: 100%;
+              }
+              .text-wrapper {
+                margin: auto;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 75%;
+                .descr {
+                  p {
+                    font-family: 'Roboto Regular';
+                    color: #fff;
+                    font-size: 13px;
+                    span {
+                      font-family: 'Fira Sans Extra Condensed Medium';
+                      background-color: #fff;
+                      color: $nav-item;
+                      text-transform: uppercase;
+                      padding: 7px 14px;
+                      margin-right: 15px;
+                      font-size: 16px;
+                    }
+                  }
+
+                }
+                .title {
+                  h1 {
+                    font-family: 'Fira Sans Extra Condensed Medium';
+                    font-size: 29px;
+                    color: #fff;
+                    line-height: 34px;
+                    margin-bottom: 0;
+                  }
+                  span {
+                    font-family: 'Roboto Italic';
+                    color: #fff;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+            .right-section {
+              padding-right: 0;
+              ul {
+                padding: 10px 0;
+                height: 100%;
+                text-align: center;
+                @media screen and (min-width: $screen-lg-device) {
+                  padding: 30px 0;
+                }
+                li {
+                  list-style: none;
+                  padding: 10px 0;
+                  @media screen and (min-width: $screen-lg-device) {
+                    padding: 12px 0;
+                  }
+                  a {
+                    color: $nav-item;
+                    &:hover {
+                      text-decoration: none;
+                      background-color: $nav-item;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .search-icon {
+          width: 20px;
+        }
+      }
+    }
+    .collapse {
+      @media screen and (max-width: $screen-md-device) and (min-width: $screen-sm-device) {
+        display: none !important;
+      }
+    }
+    .nav {
+      @media screen and (min-width: $screen-md-device) {
+        float: right;
+        height: 100%;
+        padding: 40px 0 0;
+        margin-right: 85px;
+      }
+      li {
+        text-align: center;
+        @media screen and (max-width: $screen-md-device) {
+          text-align: left;
+          float: none;
+        }
+        &:nth-last-child(2) {
+          // border-left: 1px solid $partition;
+        }
+        &:last-child {
+          // background: $nav-item;
+          // width: 70px;
+        }
+        a {
+          color: $nav-item;
+          padding: 15px 10px;
+          font-family: "Fira Sans Extra Condensed Regular", sans-serif;
+          &:hover, &:active, &:focus {
+            color: $nav-item-hover;
+          }
+          span {
+            top: 14px;
+            right: 50%;
+            @media screen and (max-width: $screen-md-device) {
+              display: none;
+            }
+          }
+        }
+      }
+      // .last::before {
+      //     content: '';
+      //     display: inline-block;
+      //     width: 0;
+      //     height: 0;
+      //     border: 20px solid transparent;
+      //     vertical-align: middle;
+      //     border-bottom-color: #CBCBCB;
+      //     border-right-color: #CBCBCB;
+      // }
+    }
+  }
+}
+
+// toggle dropdown menu earlier
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}

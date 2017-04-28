@@ -47,6 +47,7 @@
             display: inline-block;
             position: fixed;
             left: 0;
+            top: 95px;
             width: 100%;
             background: #f0f0f0;
             .left-section {
@@ -146,12 +147,13 @@
           text-align: left;
           float: none;
         }
-        &:nth-last-child(2) {
-          // border-left: 1px solid $partition;
-        }
         &:last-child {
-          // background: $nav-item;
-          // width: 70px;
+          span {
+            border-left: 1px solid #c4c5c5;
+            float: left;
+            height: 25px;
+            margin-top: 12px;
+          }
         }
         a {
           color: $nav-item;
@@ -169,16 +171,6 @@
           }
         }
       }
-      // .last::before {
-      //     content: '';
-      //     display: inline-block;
-      //     width: 0;
-      //     height: 0;
-      //     border: 20px solid transparent;
-      //     vertical-align: middle;
-      //     border-bottom-color: #CBCBCB;
-      //     border-right-color: #CBCBCB;
-      // }
     }
   }
 }

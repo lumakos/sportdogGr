@@ -1,7 +1,141 @@
+/* header bot  */
+.main-container {
+  margin-top: 40px;
+  .header-bot {
+    overflow: hidden;
+    .superleague, .ch {
+      float: left;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 5px;
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        a {
+          width: 30px;
+          height: 30px;
+          display: block;
+          text-indent: -20000px;
+          opacity: 1;
+          &:hover {
+            opacity: .5;
+            -webkit-transition: opacity 0.3s;
+          	-moz-transition: opacity 0.3s;
+          	transition: opacity 0.3s;
+          }
+        }
+      }
+    }
+    .social {
+      float: right;
+      padding: 0;
+      margin-bottom: 0;
+      margin-top: 3px;
+      li {
+        list-style: none;
+        display: inline-block;
+        p {
+          font-family: "Fira Sans Extra Condensed Regular";
+          color: #231f20;
+          padding-right: 10px;
+        }
+      }
+    }
+    .superleague {
+
+      a.aek {
+        background: url(../img/topbar/superleague_sprite.png) 0 -4px no-repeat;
+      }
+      a.asteras-tripoles {
+        background: url(../img/topbar/superleague_sprite.png) 0 -94px no-repeat;
+      }
+      a.atrometos {
+        background: url(../img/topbar/superleague_sprite.png) 0 -244px no-repeat;
+      }
+      a.erakles {
+        background: url(../img/topbar/superleague_sprite.png) 0 -304px no-repeat;
+      }
+      a.ael {
+        background: url(../img/topbar/superleague_sprite.png) 0 -725px no-repeat;
+      }
+      a.levadeiakos {
+        background: url(../img/topbar/superleague_sprite.png) 0 -574px no-repeat;
+      }
+      a.olubiakos {
+        background: url(../img/topbar/superleague_sprite.png) 0 -184px no-repeat;
+      }
+      a.panathenaikos {
+        background: url(../img/topbar/superleague_sprite.png) 0 -334px no-repeat;
+      }
+      a.panaitolikos {
+        background: url(../img/topbar/superleague_sprite.png) 0 -544px no-repeat;
+      }
+      a.panionios {
+        background: url(../img/topbar/superleague_sprite.png) 0 -364px no-repeat;
+      }
+      a.aokerkuras {
+        background: url(../img/topbar/superleague_sprite.png) 0 -633px no-repeat;
+      }
+      a.paok {
+        background: url(../img/topbar/superleague_sprite.png) 0 -424px no-repeat;
+      }
+      a.pas-giannina {
+        background: url(../img/topbar/superleague_sprite.png) 0 -512px no-repeat;
+      }
+      a.scoda-xanthesa {
+        background: url(../img/topbar/superleague_sprite.png) 0 -454px no-repeat;
+      }
+      a.platanias {
+        background: url(../img/topbar/superleague_sprite.png) 0 -663px no-repeat;
+      }
+      a.veroia {
+        background: url(../img/topbar/superleague_sprite.png) 0 -693px no-repeat;
+      }
+      a.ares {
+        background: url(../img/topbar/superleague_sprite.png) 0 -64px no-repeat;
+      }
+      a.ophe {
+        background: url(../img/topbar/superleague_sprite.png) 0 -482px no-repeat;
+      }
+    }
+    .ch {
+      li {
+        &:first-child {
+          width: 20px;
+        }
+      }
+      a.juventus {
+        background: url(../img/topbar/ch.png) 0 0 no-repeat;
+      }
+      a.real-mandrid {
+        background: url(../img/topbar/ch.png) 0 -186px no-repeat;
+      }
+      a.atlentiko-madrid {
+        background: url(../img/topbar/ch.png) 0 -38px no-repeat;
+      }
+      a.chelsea {
+        background: url(../img/topbar/ch.png) 0 -69px no-repeat;
+      }
+      a.milan {
+        background: url(../img/topbar/ch.png) 0 -100px no-repeat;
+      }
+      a.internazionale {
+        background: url(../img/topbar/ch.png) 0 -131px no-repeat;
+      }
+      a.borussia-dortmund {
+        background: url(../img/topbar/ch.png) 0 -219px no-repeat;
+      }
+      a.hellas {
+        background: url(../img/topbar/ch.png) 0 -255px no-repeat;
+      }
+    }
+  }
+}
+
 /* slider */
 .hero-spacer {
+  margin-top: 10px;
   .carousel-control {
-    // width: auto;
     top: 200px;
     width: 40px;
     height: 40px;
@@ -100,4 +234,11 @@
       }
     }
   }
+}
+.wall {
+  border-left: 1px solid #c4c5c5;
+  float: left;
+  height: 30px;
+  margin-top: 5px;
+  margin: 5px 12px;
 }

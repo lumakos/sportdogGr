@@ -16,22 +16,23 @@
 
         $(".right").on('mouseenter', function (e) {
             var currentActive = $('.carousel-inner').find('.item.active').next();
-            var next = currentActive.find('.carousel-caption').html();
+            var next = currentActive.find('.template').html();
+
             if (typeof next != 'undefined') {
               $('.next-btn').after(next);
             }
         }).on('mouseleave', function (e) {
-            $('.right p').remove();
+            $('.right div').remove();
         });
 
         $(".left").on('mouseenter', function (e) {
             var preActive = $('.carousel-inner').find('.item.active').prev();
-            var previous = preActive.find('.carousel-caption').html();
+            var previous = preActive.find('.template').html();
             if (typeof previous != 'undefined') {
               $('.prev-btn').after(previous);
             }
         }).on('mouseleave', function (e) {
-          $('.left p').remove();
+          $('.left div').remove();
         });
 
     });

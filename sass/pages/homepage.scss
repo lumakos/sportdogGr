@@ -1,3 +1,11 @@
+/* elements */
+ul {
+  padding-left: 0;
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}
 /* header bot  */
 .main-container {
   margin-top: 40px;
@@ -135,26 +143,114 @@
 /* slider */
 .hero-spacer {
   margin-top: 10px;
-  .carousel-control {
-    top: 200px;
-    width: 40px;
-    height: 40px;
-    background: red;
-    -webkit-transition: width 1s;
-       -moz-transition: width 1s;
-         -o-transition: width 1s;
-        -ms-transition: width 1s;
-            transition: width 1s;
-    &:hover {
-      width: 286px;
+  position: relative;
+  #slidetext {
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    color: #fff;
+    font-family: "Fira Sans Extra Condensed Light";
+    font-size: 26px;
+  }
+  .carousel-caption {
+    left: 27px;
+    top: 29px;
+    text-align: left;
+    .date-time {
+      ul {
+        margin-bottom: 0;
+        li {
+          text-shadow: none;
+          &:nth-child(1) {
+            background-color: #b5151b;
+
+          }
+          &:nth-child(2) {
+            background-color: #fff;
+            position: relative;
+            left: -3px;
+            p {
+              color: #231f20;
+            }
+          }
+          p {
+            margin-bottom: 0;
+            font-family: "Fira Sans Extra Condensed Medium";
+            font-size: 12px;
+            padding: 4px 9px;
+          }
+        }
+        span {
+          font-family: "Roboto Regular";
+          font-size: 9px;
+          margin-left: 10px;
+          position: relative;
+          top: -1px;
+        }
+      }
     }
+    .title {
+      h1 {
+        font-family: "Fira Sans Extra Condensed Medium";
+        font-style: italic;
+        font-size: 54px;
+        margin-top: 10px;
+      }
+      p {
+        font-family: "Fira Sans Extra Condensed Light";
+        font-size: 30px;
+        width: 40%;
+        margin-bottom: 0;
+      }
+      span {
+        font-family: "Roboto Italic";
+        font-size: 12px;
+      }
+    }
+
+  }
+  .carousel-control {
     .glyphicon-chevron-right {
-      margin-right: 0;
+      margin-left: -25px;
       right: 0;
-      top: 13px;
+      left: 100%;
+      position: fixed;
+      bottom: 5px;
     }
     .glyphicon-chevron-left {
       margin-left: -25px;
+      right: 0;
+      left: 100%;
+      top: 17px;
+    }
+  }
+  .right.carousel-control {
+    top: 200px;
+    width: 40px;
+    height: 40px;
+    transform: translateY(0);
+    background: #fff;
+    opacity: 1;
+    -webkit-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+       -moz-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+         -o-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+        -ms-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+            transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+    &:hover {
+      width: 286px;
+      height: 120px;
+      transform: translateY(-78px);
+      .glyphicon-chevron-right {
+        position: fixed;
+        top: 78%;
+        bottom: 0;
+      }
+    }
+    span {
+      position: fixed;
+      bottom: 0;
+      right: 0;
     }
   }
   .left.carousel-control {
@@ -165,14 +261,18 @@
     top: 240px;
     width: 40px;
     height: 40px;
-    background: red;
-    -webkit-transition: width 1s;
-       -moz-transition: width 1s;
-         -o-transition: width 1s;
-        -ms-transition: width 1s;
-            transition: width 1s;
+    background: #fff;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+       -moz-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+         -o-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+        -ms-transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
+            transition: transform 1s ease-in-out, height 1s ease-in-out, width 1s ease-in-out;
     &:hover {
       width: 286px;
+      height: 120px;
+      transform: translateY(-2px);
     }
   }
   .next-preview, .prev-preview {

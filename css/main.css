@@ -457,6 +457,38 @@ ul {
     .main-container .header-bot .ch a.hellas {
       background: url(../img/topbar/ch.png) 0 -255px no-repeat; }
 
+/* arrow's preview */
+.preview {
+  position: relative;
+  overflow: hidden; }
+  .preview .sport-image {
+    width: 100px;
+    height: 120px;
+    float: left;
+    padding: 10px;
+    margin-top: 0; }
+  .preview .sport-date {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 9px;
+    float: left;
+    font-family: "Roboto Regular";
+    color: #5f5f5f;
+    margin-top: 9px; }
+  .preview .sport-title {
+    float: left;
+    position: absolute;
+    left: 100px;
+    width: 120px;
+    line-height: 22px;
+    text-align: left; }
+    .preview .sport-title a {
+      font-family: "Fira Sans Extra Condensed Medium";
+      color: #231f20;
+      font-size: 14px;
+      line-height: 12px; }
+
 /* slider */
 .hero-spacer {
   margin-top: 10px;
@@ -509,6 +541,10 @@ ul {
     .hero-spacer .carousel-caption .title span {
       font-family: "Roboto Italic";
       font-size: 12px; }
+  .hero-spacer .carousel-control .prev-btn {
+    position: absolute;
+    right: 19px;
+    top: 15px; }
   .hero-spacer .carousel-control .glyphicon-chevron-right {
     margin-left: -25px;
     right: 0;
@@ -522,8 +558,8 @@ ul {
     top: 17px; }
   .hero-spacer .right.carousel-control {
     top: 200px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
     transform: translateY(0);
     background: #fff;
     opacity: 1;
@@ -535,23 +571,23 @@ ul {
     .hero-spacer .right.carousel-control:hover {
       width: 286px;
       height: 120px;
-      transform: translateY(-78px); }
+      transform: translateY(-60px); }
       .hero-spacer .right.carousel-control:hover .glyphicon-chevron-right {
         position: fixed;
         top: 78%;
         bottom: 0; }
     .hero-spacer .right.carousel-control span {
       position: fixed;
-      bottom: 0;
-      right: 0; }
+      bottom: 12px;
+      right: 15px; }
   .hero-spacer .left.carousel-control {
     float: right;
     right: 0;
     width: auto;
     left: auto;
-    top: 240px;
-    width: 40px;
-    height: 40px;
+    top: 260px;
+    width: 50px;
+    height: 60px;
     background: #fff;
     opacity: 1;
     transform: translateY(0);

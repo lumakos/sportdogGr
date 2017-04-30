@@ -130,7 +130,8 @@
             padding: 30px 0; } }
         .main-topbar .navbar-wrapper .navbar-collapse .navbar-nav .dropdown .item .right-section ul li {
           list-style: none;
-          padding: 10px 0; }
+          padding: 10px 0;
+          width: 100%; }
           @media screen and (min-width: 1200px) {
             .main-topbar .navbar-wrapper .navbar-collapse .navbar-nav .dropdown .item .right-section ul li {
               padding: 12px 0; } }
@@ -505,34 +506,15 @@ ul {
     left: 27px;
     top: 29px;
     text-align: left; }
-    .hero-spacer .carousel-caption .date-time ul {
-      margin-bottom: 0; }
-      .hero-spacer .carousel-caption .date-time ul li {
-        text-shadow: none; }
-        .hero-spacer .carousel-caption .date-time ul li:nth-child(1) {
-          background-color: #b5151b; }
-        .hero-spacer .carousel-caption .date-time ul li:nth-child(2) {
-          background-color: #fff;
-          position: relative;
-          left: -3px; }
-          .hero-spacer .carousel-caption .date-time ul li:nth-child(2) p {
-            color: #231f20; }
-        .hero-spacer .carousel-caption .date-time ul li p {
-          margin-bottom: 0;
-          font-family: "Fira Sans Extra Condensed Medium";
-          font-size: 12px;
-          padding: 4px 9px; }
-      .hero-spacer .carousel-caption .date-time ul span {
-        font-family: "Roboto Regular";
-        font-size: 9px;
-        margin-left: 10px;
-        position: relative;
-        top: -1px; }
     .hero-spacer .carousel-caption .title h1 {
       font-family: "Fira Sans Extra Condensed Medium";
       font-style: italic;
       font-size: 54px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      width: 374px;
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-decoration-skip: ink; }
     .hero-spacer .carousel-caption .title p {
       font-family: "Fira Sans Extra Condensed Light";
       font-size: 30px;
@@ -614,6 +596,30 @@ ul {
   .hero-spacer .left:hover .prev-preview {
     display: block; }
 
+.date-time ul {
+  margin-bottom: 0; }
+  .date-time ul li {
+    text-shadow: none; }
+    .date-time ul li:nth-child(1) {
+      background-color: #b5151b; }
+    .date-time ul li:nth-child(2) {
+      background-color: #fff;
+      position: relative;
+      left: -3px; }
+      .date-time ul li:nth-child(2) p {
+        color: #231f20; }
+    .date-time ul li p {
+      margin-bottom: 0;
+      font-family: "Fira Sans Extra Condensed Medium";
+      font-size: 10px;
+      padding: 4px 9px; }
+  .date-time ul span {
+    font-family: "Roboto Regular";
+    font-size: 9px;
+    margin-left: 10px;
+    position: relative;
+    top: -1px; }
+
 /* Newsletter section */
 .newsletter-wrapper {
   background-color: #eceded; }
@@ -651,5 +657,134 @@ ul {
   height: 30px;
   margin-top: 5px;
   margin: 5px 12px; }
+
+.daily-news-wrapper {
+  margin: 40px 0 25px; }
+  .daily-news-wrapper > div {
+    padding: 0; }
+  .daily-news-wrapper .dropdown-menu-section {
+    text-align: center; }
+    .daily-news-wrapper .dropdown-menu-section button {
+      width: 167px;
+      border-radius: 0;
+      text-align: left;
+      font-family: "Roboto Regular"; }
+    .daily-news-wrapper .dropdown-menu-section span {
+      float: right;
+      top: 3px;
+      position: relative; }
+    .daily-news-wrapper .dropdown-menu-section .dropdown-menu {
+      margin: 0;
+      padding: 0;
+      border-radius: 0; }
+      .daily-news-wrapper .dropdown-menu-section .dropdown-menu li {
+        width: 100%;
+        border-bottom: 1px solid #ccc; }
+        .daily-news-wrapper .dropdown-menu-section .dropdown-menu li a {
+          padding: 10px 13px;
+          font-family: "Roboto Regular";
+          color: #231f20; }
+    .daily-news-wrapper .dropdown-menu-section .btn-group.open .dropdown-toggle {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: #fff;
+      border-color: #ccc; }
+  .daily-news-wrapper .fancy {
+    line-height: 0.5;
+    text-align: center; }
+    .daily-news-wrapper .fancy span {
+      display: inline-block;
+      position: relative;
+      font-family: "Fira Sans Extra Condensed Bold";
+      font-style: italic;
+      color: #231f20;
+      font-size: 20px; }
+    .daily-news-wrapper .fancy span:before,
+    .daily-news-wrapper .fancy span:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid #c4c5c5;
+      top: 0;
+      width: 487px; }
+    .daily-news-wrapper .fancy span:before {
+      right: 100%;
+      margin-right: 15px; }
+    .daily-news-wrapper .fancy span:after {
+      left: 100%;
+      margin-left: 15px; }
+
+.hero-feature:first-child {
+  margin-bottom: 20px; }
+
+.daily-news-section .thumbnail {
+  border: 0; }
+.daily-news-section .thumbnail-first {
+  height: 570px;
+  position: relative; }
+  .daily-news-section .thumbnail-first .caption {
+    position: absolute;
+    bottom: 25px; }
+    .daily-news-section .thumbnail-first .caption .date-time ul {
+      text-align: left; }
+      .daily-news-section .thumbnail-first .caption .date-time ul li:first-child p {
+        color: #fff; }
+      .daily-news-section .thumbnail-first .caption .date-time ul span {
+        position: absolute;
+        top: 37px;
+        left: 0;
+        color: #fff; }
+    .daily-news-section .thumbnail-first .caption .title h1 {
+      font-family: "Fira Sans Extra Condensed Medium";
+      font-size: 22px;
+      margin-top: 10px;
+      color: #fff;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 3px; }
+    .daily-news-section .thumbnail-first .caption .title span {
+      font-family: "Roboto Italic";
+      font-size: 8px;
+      color: #fff;
+      text-align: left;
+      float: left; }
+
+.daily-new {
+  position: relative; }
+  .daily-new img {
+    height: 159px; }
+  .daily-new .date-time {
+    float: left;
+    position: absolute;
+    top: 151px; }
+    .daily-new .date-time ul li:first-child {
+      background: #231f20;
+      color: #fff; }
+    .daily-new .date-time ul li:last-child {
+      background: #eceded;
+      color: #231f20; }
+  .daily-new .caption {
+    padding: 19px 9px 9px 9px;
+    text-align: left;
+    clear: both; }
+    .daily-new .caption p {
+      font-family: "Fira Sans Extra Condensed Medium";
+      color: #231f20;
+      margin-bottom: 0; }
+    .daily-new .caption span {
+      font-family: "Roboto Regular";
+      color: #5f5f5f;
+      font-size: 12px; }
+      .daily-new .caption span:last-child {
+        font-family: "Roboto Italic";
+        color: #b5151b;
+        font-size: 9px;
+        float: left; }
+
+.banner {
+  float: right;
+  width: 236px; }
+  .banner img {
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */

@@ -464,17 +464,23 @@ top: 15px;
 
 .hero-feature {
   &:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
 .daily-news-section {
   .thumbnail {
     border: 0;
+    margin-bottom: 0;
+    padding: 0;
   }
   .thumbnail-first {
-    height: 570px;
+    height: 527px;
     position: relative;
+    img {
+      height: 521px;
+      width: 100%;
+    }
     .caption {
       position: absolute;
       bottom: 25px;
@@ -520,13 +526,14 @@ top: 15px;
 
 .daily-new {
   position: relative;
+  margin-bottom: 20px;
   img {
     height: 159px;
   }
   .date-time {
     float: left;
     position: absolute;
-    top: 151px;
+    top: 147px;
     ul {
       li {
         &:first-child {
@@ -541,7 +548,7 @@ top: 15px;
     }
   }
   .caption {
-    padding: 19px 9px 9px 9px;
+    padding: 19px 9px 9px 0;
     text-align: left;
     clear: both;
     p {
@@ -565,8 +572,147 @@ top: 15px;
 
 .banner {
   float: right;
-  width: 236px;
+  width: 260px;
   img {
-    height: auto;
+    height: 119%;
+  }
+}
+
+.banner-section-2 {
+  margin: 20px 0 70px;
+  img {
+    width: 66%;
+  }
+}
+/* Blogger Section */
+.blogger-section {
+  margin-bottom: 40px;
+  ul {
+    margin-top: 30px;
+  }
+  .fancy {
+    img {
+      width: 35px;
+      position: relative;
+      top: -13px;
+      margin-right: 5px;
+    }
+    span:before,
+     span:after {
+      width: 230px;
+    }
+  }
+  .tag {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 1000;
+    background-color: #b5151b;
+    border-radius: 50%;
+  }
+  img {
+    float: left;
+    border-radius: 50%;
+    width: 120px;
+  }
+  .info {
+    float: left;
+    width: 76%;
+    padding-left: 20px;
+    p {
+      font-family: "Roboto Italic";
+      color: #b5151b;
+      margin-bottom: 5px;
+      text-align: left;
+      font-size: 11px;
+    }
+    h2 {
+      margin: 0;
+      font-family: "Fira Sans Extra Condensed Medium";
+      font-size: 24px;
+      text-align: left;
+      a {
+        color: #231f20;
+      }
+    }
+    q {
+      quotes: "\201C";
+      &:after {
+        display: none;
+      }
+      &:before {
+        font-size: 12px;
+
+      }
+    }
+  }
+}
+
+/* Header Line  */
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  span {
+    display: inline-block;
+    position: relative;
+    font-family: "Fira Sans Extra Condensed Bold";
+    font-style: italic;
+    color: #231f20;
+    font-size: 20px;
+  }
+  span:before,
+   span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #c4c5c5;
+    top: 0;
+    width: 487px;
+  }
+  span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+}
+
+/* Network */
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
   }
 }

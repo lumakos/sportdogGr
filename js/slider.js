@@ -4,6 +4,7 @@
 
         $('.carousel').on('slid.bs.carousel', function () {
 
+          /* TopBanner Slider */
           var carouselData = $(this).data('bs.carousel');
           var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
           var total = carouselData.$items.length;
@@ -39,6 +40,28 @@
             }
         }).on('mouseleave', function (e) {
             $('.carousel-control').find('.preview').remove();
+        });
+
+        /* Slider Nerwork */
+        // Instantiate the Bootstrap carousel
+        $('.multi-item-carousel').carousel({
+          interval: false
+        });
+
+        // for every slide in carousel, copy the next slide's item in the slide.
+        // Do the same for the next, next item.
+        $('.multi-item-carousel .item').each(function(){
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          if (next.next().length>0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+          } else {
+          	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+          }
         });
 
     });

@@ -841,7 +841,8 @@ top: 15px;
       padding-right: 0;
       li {
         position: relative;
-        padding-top: 10px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
         .overlay {
           position: absolute;
           left: 0px;
@@ -870,7 +871,7 @@ top: 15px;
   }
   .right-section {
     text-align: center;
-    padding-right: 0;
+    padding: 0;
     .overlay {
       position: absolute;
       left: 0px;
@@ -893,6 +894,12 @@ top: 15px;
     }
     a {
       text-align: center;
+      color: #fff;
+      font-family: "Roboto Regular";
+      text-decoration: none;
+      font-size: 13px;
+      position: relative;
+      top: 17px;
     }
   }
 }
@@ -915,6 +922,21 @@ top: 15px;
       width: 100%;
       height: 480px;
     }
+  }
+}
+
+.more-articles-btn {
+  text-align: center;
+  button {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    color: #231f20;
+    font-family: "Fira Sans Extra Condensed Medium";
+    font-size: 12px;
+    padding: 7px 100px;
+    border-radius: 0;
   }
 }
 

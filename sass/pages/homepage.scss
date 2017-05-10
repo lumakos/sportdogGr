@@ -140,6 +140,63 @@ ul {
   }
 }
 
+/* images */
+.image-wrapper {
+  margin-bottom: 10px;
+  &:nth-child(2n+1){
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  &:nth-child(2n){
+    padding-right: 0;
+    padding-left: 5px;
+  }
+}
+.image-layout {
+  width: 100%;
+  height: 294px;
+}
+.image-caption {
+  position: absolute;
+  left: 30px;
+  bottom: 14px;
+  right: 0;
+  text-align: left;
+
+  .date-time {
+    ul {
+      li{
+
+        &:first-child {
+          background-color: #fff;
+          color: #231f20;
+        }
+        &:last-child {
+          background-color: transparent;
+          color: #fff;
+        }
+        span {
+          top: 1px;
+        }
+      }
+    }
+  }
+  .title {
+    h1 {
+      font-family: "Fira Sans Extra Condensed Medium";
+      color: #fff;
+      font-size: 30px;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+    span {
+      font-family: "Roboto Italic";
+      color: #fff;
+      font-size: 11px;
+    }
+  }
+}
+
 /* arrow's preview */
 .preview {
   position: relative;
@@ -842,4 +899,27 @@ top: 15px;
 
 .sports-wrapper {
   margin-top: 30px;
+  .grid {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .left-section {
+    padding-left: 0;
+    .daily-new {
+      padding-left: 0;
+    }
+  }
+  .right-section {
+    padding-right: 0;
+    img {
+      width: 100%;
+      height: 480px;
+    }
+  }
+}
+
+.thumbnail {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0;
 }
